@@ -28,6 +28,7 @@ connection.once('open', () =>
 )
 
 if (process.env.NODE_ENV === 'production') {
+  console.log(path.__dirname)
   app.use(express.static(path.join(__dirname, './myapp/build')))
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './myapp/build/index.html'))
