@@ -83,10 +83,18 @@ async function leaveBoardFunction (
   // setBoardDeleted(true)
 }
 
-module.exports = {
+export {
   fetchBoardsFunction,
   createBoardFunction,
   deleteBoardFunction,
   updateBoardFunction,
   leaveBoardFunction
 }
+
+// module.exports = {
+//   fetchBoardsFunction,
+//   createBoardFunction,
+//   deleteBoardFunction,
+//   updateBoardFunction,
+//   leaveBoardFunction
+// }
